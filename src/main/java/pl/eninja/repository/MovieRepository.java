@@ -8,10 +8,9 @@ import pl.eninja.domain.Movie;
 import java.util.List;
 
 public interface MovieRepository extends JpaRepository<Movie, Long> {
-  List<Movie> findByTitle(String title);
+  List<Movie> findByTitle(@Param("title") String title);
 
-  @Query("SELECT m from Movie m WHERE m.year = :year")
-  List<Movie> findByYear(
-          @Param("year")
-                  int year);
+  @Query(value = "SELECT COUNT(*) FROM movie;",
+         nativeQuery = true)
+  String countAllMovies();
 }
