@@ -1,11 +1,11 @@
-package pl.eninja.controller;
+package pl.b2bnetwork.controller;
 
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import pl.eninja.domain.Movie;
-import pl.eninja.service.MovieServiceV1;
+import pl.b2bnetwork.domain.Movie;
+import pl.b2bnetwork.service.MovieServiceV1;
 
 import java.util.List;
 

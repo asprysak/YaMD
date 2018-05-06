@@ -1,10 +1,10 @@
-package pl.eninja.service;
+package pl.b2bnetwork.service;
 
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.eninja.domain.Movie;
-import pl.eninja.repository.MovieRepository;
+import pl.b2bnetwork.domain.Movie;
+import pl.b2bnetwork.repository.MovieRepository;
 
 import java.util.List;
 import java.util.Optional;
