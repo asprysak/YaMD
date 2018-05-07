@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pl.eninja</groupId>
-    <artifactId>MovieDatabase</artifactId>
+    <groupId>pl.b2bnetwork</groupId>
+    <artifactId>YaMD</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>MovieDatabase API</name>
+    <name>YaMD</name>
     <description>Spring Boot REST Service to obtain movie information </description>
 
     <parent>

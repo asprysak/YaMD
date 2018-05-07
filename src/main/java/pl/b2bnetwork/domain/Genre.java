@@ -1,4 +1,4 @@
-package pl.eninja.domain;
+package pl.b2bnetwork.domain;
 
 public enum Genre {
   DRAMAT,
