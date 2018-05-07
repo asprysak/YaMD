@@ -31,10 +31,10 @@ public class MovieControllerV1 {
         return movieServiceV1.getMovieById(movieId);
     }
 
-    @GetMapping(path = "/t={title}",
+    @GetMapping(path = "/t={movieTitle}",
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public List<Movie> getMovieByTitle(@PathVariable("title") String title) {
-        return movieServiceV1.getMoviesByTitle(title);
+    public List<Movie> getMovieByTitle(@PathVariable("movieTitle") String movieTitle) {
+        return movieServiceV1.getMoviesByTitle(movieTitle);
     }
 
     @GetMapping(path = "/y={year}",
