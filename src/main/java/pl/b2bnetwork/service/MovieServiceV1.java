@@ -26,8 +26,8 @@ public class MovieServiceV1 {
         return movieRepository.findOne(validateMovie(id));
     }
 
-    public List<Movie> getMoviesByTitle(String title) {
-        return movieRepository.findByTitle(title);
+    public List<Movie> getMoviesByTitle(String movieTitle) {
+        return movieRepository.findByTitle(movieTitle);
     }
 
     public List<Movie> getMoviesByYear(Integer year) {

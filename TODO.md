@@ -1,6 +1,6 @@
 # ToDo
-1. Add findByYear in MovieRepository
-2. Change findByTitle in MovieRepository to search by substring
+1. Add findByYear in MovieRepository - DONE
+2. Change findByTitle in MovieRepository to search by substring - DONE
 3. Change updateMovie in MovieServiceV1 to replace only given data
 4. Maybe in MovieController List<Movie> should return data without Set<FilmCrewMember>
 5. Add Country to Movie

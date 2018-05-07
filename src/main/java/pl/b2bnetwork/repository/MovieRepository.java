@@ -12,7 +12,9 @@ import java.util.List;
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
-    List<Movie> findByTitle(@Param("title") String title);
+    @Query(value = "SELECT * FROM movie WHERE title LIKE %:movieTitle%",
+            nativeQuery = true)
+    List<Movie> findByTitle(@Param("movieTitle") String movieTitle);
 
     @Query(value = "SELECT COUNT(*) FROM movie;",
             nativeQuery = true)
