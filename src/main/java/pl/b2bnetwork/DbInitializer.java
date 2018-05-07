@@ -1,13 +1,13 @@
-package pl.eninja;
+package pl.b2bnetwork;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import pl.eninja.domain.Award;
-import pl.eninja.domain.FilmCrewMember;
-import pl.eninja.domain.Genre;
-import pl.eninja.domain.Movie;
-import pl.eninja.repository.MovieRepository;
+import pl.b2bnetwork.domain.Award;
+import pl.b2bnetwork.domain.FilmCrewMember;
+import pl.b2bnetwork.domain.Genre;
+import pl.b2bnetwork.domain.Movie;
+import pl.b2bnetwork.repository.MovieRepository;
 
 import java.util.HashSet;
 import java.util.Set;

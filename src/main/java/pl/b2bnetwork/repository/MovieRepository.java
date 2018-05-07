@@ -1,9 +1,9 @@
-package pl.eninja.repository;
+package pl.b2bnetwork.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import pl.eninja.domain.Movie;
+import pl.b2bnetwork.domain.Movie;
 
 import java.util.List;
 

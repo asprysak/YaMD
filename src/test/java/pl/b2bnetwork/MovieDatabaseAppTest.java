@@ -1,4 +1,4 @@
-package pl.eninja;
+package pl.b2bnetwork;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
