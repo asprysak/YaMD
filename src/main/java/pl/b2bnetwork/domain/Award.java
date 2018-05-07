@@ -1,6 +1,7 @@
 package pl.b2bnetwork.domain;
 
 public enum Award {
+  
     OSCARS,
     CANNES,
     EMMY,

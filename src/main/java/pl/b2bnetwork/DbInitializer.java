@@ -3,7 +3,11 @@ package pl.b2bnetwork;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import pl.b2bnetwork.domain.*;
+
+import pl.b2bnetwork.domain.Award;
+import pl.b2bnetwork.domain.FilmCrewMember;
+import pl.b2bnetwork.domain.Genre;
+import pl.b2bnetwork.domain.Movie;
 import pl.b2bnetwork.repository.MovieRepository;
 
 import java.util.HashSet;
@@ -274,12 +278,10 @@ public class DbInitializer implements CommandLineRunner {
 //        johnWickMembers.add(CrewMember.builder().person(kReeves).movie(johnWick).position(Position.ACTOR).build());
         johnWick.setCrewMembers(johnWickMembers);
 
-
         this.movieRepository.save(matrix);
         this.movieRepository.save(johnWick);
         this.movieRepository.save(twelveAngryMen);
         this.movieRepository.save(pulpFiction);
-
 
     }
 }
