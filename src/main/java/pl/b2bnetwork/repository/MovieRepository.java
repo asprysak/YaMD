@@ -17,4 +17,7 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     @Query(value = "SELECT COUNT(*) FROM movie;",
             nativeQuery = true)
     String countAllMovies();
+
+    List<Movie> findByYear(@Param("year") Integer year);
+
 }

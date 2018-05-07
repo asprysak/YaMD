@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import pl.b2bnetwork.domain.Award;
-import pl.b2bnetwork.domain.FilmCrewMember;
-import pl.b2bnetwork.domain.Genre;
-import pl.b2bnetwork.domain.Movie;
+import pl.b2bnetwork.domain.*;
 import pl.b2bnetwork.repository.MovieRepository;
 
 import java.util.HashSet;
