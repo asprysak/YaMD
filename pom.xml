@@ -5,6 +5,7 @@
 
     <groupId>pl.b2bnetwork</groupId>
     <artifactId>YaMD</artifactId>
+  
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
