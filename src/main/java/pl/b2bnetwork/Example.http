@@ -32,3 +32,9 @@ Content-Type: application/json
     "title": "Updated",
     "year": 1984
 }
+
+###
+GET http://localhost:8080/v1/movies/id=4
+Content-Type: application/json
+
+###
