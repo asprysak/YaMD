@@ -1,23 +1,64 @@
 ###
 
+# issues a GET request to retrieve movies with no JWT
+### HTTP 403 Forbidden status is expected
+GET http://localhost:8080/v1/movies
+# Content-Type: application/json
+
+### registers a new user
+POST http://localhost:8080/user/sign-up
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+### logs into the application (JWT is generated)
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+# curl example
+# curl -H "Content-Type: application/json" \
+# -H "Authorization: YaMD xxx.yyy.zzz" \
+# -X POST -d '{
+#         "title": "Terminator",
+#         "year": 1984
+# }'  http://localhost:8080/v1/movies
+
+# remember to fill Authorization with the Your JWT retrieved above
+# example Authorization loooks like this
+# Authorization: YaMD eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTUzMTQ3OTI3NH0.BhFwl7v0RHGz42fi_4xSUMFhEYea0uAqtyx6iCEi9IFGjYniVV7X-bvY8mzV16lqp38mdTtGjWgnNoRaliQA9Q
+
+###
 GET http://localhost:8080/v1/movies
 Content-Type: application/json
+Authorization:
 
 ###
 GET http://localhost:8080/v1/movies/id=1
 Content-Type: application/json
+Authorization:
 
 ###
 GET http://localhost:8080/v1/movies/t=matrix
 Content-Type: application/json
+Authorization:
 
 ###
 GET http://localhost:8080/v1/movies/count
 Content-Type: application/json
+Authorization:
 
 ###
 POST http://localhost:8080/v1/movies
 Content-Type: application/json
+Authorization:
 
 {
     "title": "Terminator",
@@ -27,6 +68,7 @@ Content-Type: application/json
 ###
 PUT http://localhost:8080/v1/movies/id=4
 Content-Type: application/json
+Authorization:
 
 {
     "title": "Updated",
@@ -36,5 +78,6 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/v1/movies/id=4
 Content-Type: application/json
+Authorization:
 
 ###
