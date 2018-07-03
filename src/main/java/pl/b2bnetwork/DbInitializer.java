@@ -2,6 +2,7 @@ package pl.b2bnetwork;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import pl.b2bnetwork.model.*;
 import pl.b2bnetwork.repository.MovieRepository;
@@ -10,6 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
+@Profile("dev")
 public class DbInitializer implements CommandLineRunner {
 
     private MovieRepository movieRepository;
