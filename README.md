@@ -1,4 +1,4 @@
-# MovieDatabase-API
+# YaMD
 
 Spring Boot REST Service to obtain movie information.
 
