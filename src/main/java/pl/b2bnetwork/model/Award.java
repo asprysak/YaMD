@@ -1,4 +1,4 @@
-package pl.b2bnetwork.domain;
+package pl.b2bnetwork.model;
 
 public enum Award {
   
