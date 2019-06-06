@@ -1,12 +1,20 @@
 # ToDo
-1. Add findByYear in MovieRepository - DONE
-2. Change findByTitle in MovieRepository to search by substring - DONE
-3. Change updateMovie in MovieServiceV1 to replace only given data
-4. Maybe in MovieController List<Movie> should return data without Set<FilmCrewMember>
-5. Add Country to Movie
-6. Add Role to FilmCrewMember?
-7. Add FilmCrewMemberRepository
-8. Add FilmCrewMemberServiceV1
-9. Add FilmCrewMemberController
-10. Add Mockito Tests
-11. Fix FilmCrewMember.Builder
+- [x]  Add findByYear in MovieRepository
+- [x]  Change findByTitle in MovieRepository to search by substring
+- [ ]  Change updateMovie in MovieServiceV1 to replace only given data
+- [ ]  Maybe in MovieController List<Movie> should return data without Set<FilmCrewMember>
+- [ ]  Add Country to Movie
+- [ ]  Add Role to FilmCrewMember?
+- [ ]  Add FilmCrewMemberRepository
+- [ ]  Add FilmCrewMemberServiceV1
+- [ ]  Add FilmCrewMemberController
+- [ ]  Add Mockito Tests
+- [ ]  Fix FilmCrewMember.Builder
+
+
+### Extend application with modules:
+- [ ] Cache
+- [ ] Cloud Config
+- [ ] Elasticsearch
+- [ ] Liquibase
+- [ ] Session
